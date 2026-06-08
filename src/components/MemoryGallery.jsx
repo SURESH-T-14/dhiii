@@ -13,7 +13,7 @@ function MemoryGallery() {
   ]
 
   return (
-    <div className="w-full max-w-md">
+    <div className="w-full max-w-sm sm:max-w-md px-2 sm:px-0">
       <Swiper
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -27,30 +27,30 @@ function MemoryGallery() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4 }}
-              className="bg-white p-4 rounded-3xl shadow-xl"
+              className="bg-white p-3 sm:p-4 rounded-3xl shadow-xl"
             >
               <div className="relative bg-gradient-to-br from-yellow-100 to-pink-50 rounded-xl overflow-hidden border-4 border-white shadow-lg hover:shadow-2xl transition-all">
                 <img
                   src={memory.image}
                   alt={memory.caption}
-                  className="w-full h-80 object-cover"
+                  className="w-full h-64 sm:h-80 object-cover"
                 />
                 <motion.div 
                   animate={{ rotate: [-2, 2, -2] }}
                   transition={{ duration: 4, repeat: Infinity }}
-                  className="absolute top-2 right-2 text-4xl"
+                  className="absolute top-2 right-2 text-3xl sm:text-4xl"
                 >
                   📌
                 </motion.div>
               </div>
-              <p className="mt-4 text-center text-gray-700 font-bold handwriting text-lg">
+              <p className="mt-4 text-center text-gray-700 font-bold handwriting text-base sm:text-lg">
                 {memory.caption}
               </p>
             </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <p className="text-center text-gray-600 mt-4 text-sm">← Swipe through memories →</p>
+      <p className="text-center text-gray-600 mt-4 text-xs sm:text-sm px-2">← Swipe through memories →</p>
     </div>
   )
 }

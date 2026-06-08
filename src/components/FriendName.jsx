@@ -13,7 +13,7 @@ function FriendName({ name, onChange }) {
         value={name}
         onChange={(e) => onChange(e.target.value)}
         placeholder="Enter your friend's name"
-        className="text-3xl font-bold text-center text-pink-500 placeholder-pink-300 placeholder-opacity-70 border-none border-b-4 border-pink-400 focus:border-pink-600 focus:outline-none bg-transparent w-full max-w-sm transition-all"
+        className="text-2xl md:text-3xl font-bold text-center text-pink-500 placeholder-pink-300 placeholder-opacity-70 border-none border-b-4 border-pink-400 focus:border-pink-600 focus:outline-none bg-transparent w-full max-w-sm px-2 transition-all"
       />
     </motion.div>
   )

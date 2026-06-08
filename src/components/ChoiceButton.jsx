@@ -48,7 +48,7 @@ function ChoiceButton({ label, emoji, onClick, variant = 'primary', evasive = fa
       transition={{ type: 'spring', stiffness: 400, damping: 15 }}
       whileHover={!evasive ? { scale: 1.08, y: -2 } : {}}
       whileTap={!evasive ? { scale: 0.95 } : {}}
-      className={`px-8 py-3 rounded-full font-bold text-lg transition-all ${variants[variant]}`}
+      className={`px-4 sm:px-8 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-lg transition-all ${variants[variant]}`}
     >
       <motion.span
         animate={{ y: [0, -3, 0] }}

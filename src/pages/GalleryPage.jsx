@@ -15,7 +15,7 @@ function GalleryPage({ onNext, onPrev }) {
         <motion.h1 
           animate={{ scale: [1, 1.02, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="text-5xl font-bold text-pink-500 handwriting"
+          className="text-3xl md:text-5xl font-bold text-pink-500 handwriting px-2"
         >
           Memory Gallery 📸
         </motion.h1>
@@ -24,7 +24,7 @@ function GalleryPage({ onNext, onPrev }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-gray-600 text-lg"
+          className="text-gray-600 text-base md:text-lg px-2"
         >
           Our favorite moments together! 💕
         </motion.p>

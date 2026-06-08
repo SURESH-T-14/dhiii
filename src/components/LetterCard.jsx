@@ -38,15 +38,15 @@ function LetterCard({ friendName }) {
       <motion.h2 
         animate={{ scale: [1, 1.02, 1] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="text-5xl font-bold text-pink-500 handwriting"
+        className="text-3xl md:text-5xl font-bold text-pink-500 handwriting px-2"
       >
         Happy Best Friends Day! 💕
       </motion.h2>
       
-      <div className="bg-gradient-to-b from-white to-pink-50 rounded-3xl shadow-2xl p-8 md:p-12 max-w-2xl mx-auto border-2 border-pink-100">
-        <p className="text-xl text-gray-700 font-bold mb-6">Dear {friendName || 'Best Friend'},</p>
+      <div className="bg-gradient-to-b from-white to-pink-50 rounded-3xl shadow-2xl p-4 md:p-12 max-w-2xl mx-auto border-2 border-pink-100 mx-2 md:mx-0">
+        <p className="text-lg md:text-xl text-gray-700 font-bold mb-6 px-2">Dear {friendName || 'Best Friend'},</p>
         
-        <p className="text-lg text-gray-600 leading-relaxed min-h-[120px]">
+        <p className="text-base md:text-lg text-gray-600 leading-relaxed min-h-[120px] px-2">
           {displayedText}
           <motion.span animate={{ opacity: [1, 0] }} transition={{ duration: 0.5, repeat: Infinity }}>
             |

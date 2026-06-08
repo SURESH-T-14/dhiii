@@ -19,7 +19,7 @@ function Header() {
               repeat: Infinity,
               ease: 'easeInOut'
             }}
-            className="text-5xl inline-block"
+            className="text-3xl md:text-5xl inline-block"
           >
             {emoji}
           </motion.span>

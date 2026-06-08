@@ -32,17 +32,17 @@ function QuestionPage({ onNext, onPrev, friendName }) {
         className="text-center space-y-8"
       >
         <motion.div variants={itemVariants}>
-          <h1 className="text-5xl font-bold text-pink-500 handwriting mb-3">
+          <h1 className="text-3xl md:text-5xl font-bold text-pink-500 handwriting mb-3 px-2">
             Wait wait wait...
           </h1>
-          <p className="text-2xl text-gray-700 font-bold">
+          <p className="text-lg md:text-2xl text-gray-700 font-bold px-2">
             Are you sure?
           </p>
         </motion.div>
 
         <motion.p 
           variants={itemVariants}
-          className="text-xl text-gray-600 italic"
+          className="text-base md:text-xl text-gray-600 italic px-2"
         >
           {friendName} is really your best friend? 👀
         </motion.p>

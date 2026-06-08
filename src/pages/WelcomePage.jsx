@@ -49,19 +49,19 @@ function WelcomePage({ onNext, onNameSet }) {
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-500 handwriting mb-2">
+          <h1 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-500 handwriting mb-2 px-2">
             Happy Best Friends Day
           </h1>
-          <p className="text-2xl text-pink-300">💕 🎀 💕</p>
+          <p className="text-lg md:text-2xl text-pink-300">💕 🎀 💕</p>
         </motion.div>
 
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="space-y-4"
+          className="space-y-4 px-2"
         >
-          <p className="text-xl text-gray-600 font-semibold">
+          <p className="text-lg md:text-xl text-gray-600 font-semibold">
             Who is your best friend?
           </p>
 

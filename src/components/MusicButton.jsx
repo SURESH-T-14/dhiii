@@ -30,7 +30,7 @@ function MusicButton({ onToggle, isPlaying }) {
       whileTap={{ scale: 0.9 }}
       animate={isPlaying ? { rotate: 360 } : { rotate: 0 }}
       transition={isPlaying ? { duration: 3, repeat: Infinity, ease: 'linear' } : { duration: 0.3 }}
-      className="fixed top-6 right-6 z-50 w-16 h-16 rounded-full bg-gradient-to-r from-pink-300 to-pink-400 hover:from-pink-400 hover:to-pink-500 shadow-lg hover:shadow-2xl flex items-center justify-center text-3xl transition-all"
+      className="fixed top-4 right-4 sm:top-6 sm:right-6 z-50 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-pink-300 to-pink-400 hover:from-pink-400 hover:to-pink-500 shadow-lg hover:shadow-2xl flex items-center justify-center text-2xl sm:text-3xl transition-all"
       aria-label="Toggle music"
     >
       {isPlaying ? '🎵' : '🔇'}
